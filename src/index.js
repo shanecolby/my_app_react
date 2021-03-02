@@ -4,11 +4,12 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import BasicTest from './components/BasicTest'
+import WorkingApp from './WorkingApp'
 
 
 
 ReactDOM.render(
-  <BasicTest />,
+  <WorkingApp />,
   document.getElementById('root')
 );
 
