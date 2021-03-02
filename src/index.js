@@ -4,12 +4,23 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+function BasicTest() {
+  return (
+    < div >
+      <h1>This is react</h1>
+      <h4>It is cool because</h4>
+      <ul>
+        <li>It is interesting</li>
+        <li>It is html and js combined</li>
+        <li>It is popular</li>
+      </ul>
+      <h3>Stay tuned for more react</h3>
+    </div >
+  )
+}
+
 ReactDOM.render(
-  <ul>
-    <li>This is a</li>
-    <li>test for my first</li>
-    <li>react project</li>
-  </ul>,
+  <BasicTest />,
   document.getElementById('root')
 );
 
