@@ -10,8 +10,6 @@ function MainContent() {
         <li>This is the third step</li>
       </ul>
       <h3>Thanks for checking it out!</h3>
-
-
     </div>
   )
 }
