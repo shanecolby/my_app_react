@@ -1,8 +1,9 @@
 import React from 'react'
 
+
 function Header() {
   return (
-    <h2>This is where the header goes</h2>
+    <header className='navbar'>This is where the header goes</header>
   )
 }
 
