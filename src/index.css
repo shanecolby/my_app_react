@@ -23,3 +23,34 @@ code {
   justify-content: center;
   align-items: center;
 }
+
+.mainContent {
+  align-items: center;
+  color: cadetblue;
+  text-align: center;
+  
+}
+
+.mainImage {
+  border-radius: 50px;
+  
+
+}
+
+.mainList {
+  color: firebrick;
+  list-style: none;
+  
+
+}
+
+.subText {
+  color: black;
+}
+
+.pageBottom {
+  color:blue;
+  background-color: cadetblue;
+  text-align: center;
+  
+}
