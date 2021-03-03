@@ -5,7 +5,7 @@ function MainContent() {
     <div className='mainContent'>
       <h1>This is the main title</h1>
       <ul className="mainList">
-        <li>This is the first option</li>
+        <li>Add PROPS!</li>
         <h6 className="subText">Click when complete</h6>
         <input type='checkbox' />
         <li>The is the second option</li>
