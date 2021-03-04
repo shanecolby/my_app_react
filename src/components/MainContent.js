@@ -1,6 +1,9 @@
 import React from 'react'
 
+
+
 function MainContent() {
+
   return (
     <div className='mainContent'>
       <h1>This is the main title</h1>
