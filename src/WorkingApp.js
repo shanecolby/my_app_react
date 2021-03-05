@@ -5,6 +5,7 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import Product from "./components/Product"
 import productData from "./components/randomProducts"
+import ClassPract from "./components/ClassPract"
 
 
 function WorkingApp() {
@@ -14,6 +15,7 @@ function WorkingApp() {
       <Header />
       <MainContent />
       {productComponents}
+      <ClassPract />
       <Footer />
     </div>
   )
