@@ -4,18 +4,19 @@ class ClassPract extends React.Component {
   constructor() {
     super()
     this.state = {
-      name: "Shane",
+      name: "Shane Colby",
       age: "30"
     }
   }
   render() {
     return (
       <div>
-        <h1>{this.state.name}</h1>
+        <h3>{this.state.name}</h3>
         <h3>{this.state.age}</h3>
       </div>
     )
   }
 }
+
 
 export default ClassPract
