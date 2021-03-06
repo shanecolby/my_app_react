@@ -8,6 +8,7 @@ class ButtonNumber extends React.Component {
     }
     this.handleClick = this.handleClick.bind(this)
     this.clickTimesTwo = this.clickTimesTwo.bind(this)
+    this.divideByTwo = this.divideByTwo.bind(this)
   }
 
   handleClick() {
@@ -26,14 +27,22 @@ class ButtonNumber extends React.Component {
       }
     })
   }
+
+  divideByTwo() {
+    this.setState((prevState) => {
+      return {
+        count: prevState.count / 2
+      }
+    })
+  }
   render() {
 
     return (
-      <div>
+      <div style={{ textAlign: "center" }}>
         <h1>{this.state.count}</h1>
         <button onClick={this.handleClick}>Number + 1</button>
         <button onClick={this.clickTimesTwo}>Number * 2</button>
-        <button>Number / 2</button>
+        <button onClick={this.divideByTwo}>Number / 2</button>
       </div>
     )
   }
