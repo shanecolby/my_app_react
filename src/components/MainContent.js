@@ -17,7 +17,7 @@ function MainContent() {
         <li>This is the third option</li>
         <h6 className="subText">Click when complete</h6>
         <input type='checkbox' />
-        <img className="mainImage" src="https://hackernoon.com/images/z2xg2bpo.jpg"></img>
+        <img onMouseOver={() => console.log("Hovered!")} className="mainImage" src="https://hackernoon.com/images/z2xg2bpo.jpg"></img>
       </ul>
       <h3>Thanks for checking it out!</h3>
     </div>
