@@ -10,7 +10,7 @@ class ClassPract extends React.Component {
   }
   render() {
     return (
-      <div>
+      <div style={{ textAlign: "center" }}>
         <h3 style={{ color: "#328475" }}>{this.state.name}</h3>
         <h3>{this.state.age}</h3>
       </div >
