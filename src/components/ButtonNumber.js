@@ -53,6 +53,7 @@ class ButtonNumber extends React.Component {
         <button onClick={this.handleClick}>Number + 1</button>
         <button onClick={this.clickTimesTwo}>Number * 2</button>
         <button onClick={this.divideByTwo}>Number / 2</button>
+        <br />
         <button onClick={this.clearCount}>CLEAR</button>
       </div>
     )
