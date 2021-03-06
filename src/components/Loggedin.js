@@ -16,7 +16,7 @@ class Loggedin extends React.Component {
     }
     return (
       <div>
-        <h1>You are currently logged {wordDisplay} </h1>
+        <h1 style={{ textAlign: "center" }}>You are currently logged {wordDisplay} </h1>
       </div>
     )
   }
