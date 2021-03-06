@@ -6,6 +6,7 @@ import Footer from './components/Footer'
 import Product from "./components/Product"
 import productData from "./components/randomProducts"
 import ClassPract from "./components/ClassPract"
+import Loggedin from "./components/Loggedin"
 
 
 function WorkingApp() {
@@ -13,6 +14,7 @@ function WorkingApp() {
   return (
     <div>
       <Header />
+      <Loggedin />
       <MainContent />
       {productComponents}
       <ClassPract />
