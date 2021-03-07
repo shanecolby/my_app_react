@@ -6,7 +6,7 @@ function MainContent() {
 
   return (
     <div className='mainContent'>
-      <h1>This is the main title</h1>
+      <h1>React Practice App</h1>
       <ul className="mainList">
         <li>Add PROPS!</li>
         <h6 className="subText">Click when complete</h6>
