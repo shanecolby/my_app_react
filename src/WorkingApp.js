@@ -10,6 +10,7 @@ import Loggedin from "./components/Loggedin"
 import ButtonNumber from "./components/ButtonNumber"
 
 
+
 function WorkingApp() {
   const productComponents = productData.map(item => <Product key={item.id} product={item} />)
   return (

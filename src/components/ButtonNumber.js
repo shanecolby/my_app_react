@@ -15,7 +15,8 @@ class ButtonNumber extends React.Component {
   handleClick() {
     this.setState((prevState) => {
       return {
-        count: prevState.count + 1
+        count: prevState.count + 1,
+
       }
 
     })
@@ -24,7 +25,8 @@ class ButtonNumber extends React.Component {
   clickTimesTwo() {
     this.setState((prevState) => {
       return {
-        count: prevState.count * 2
+        count: prevState.count * 2,
+
       }
     })
   }
@@ -32,7 +34,8 @@ class ButtonNumber extends React.Component {
   divideByTwo() {
     this.setState((prevState) => {
       return {
-        count: prevState.count / 2
+        count: prevState.count / 2,
+
       }
     })
   }
@@ -40,7 +43,8 @@ class ButtonNumber extends React.Component {
   clearCount() {
     this.setState((prevState) => {
       return {
-        count: prevState.count - prevState.count
+        count: prevState.count - prevState.count,
+
       }
     })
   }
