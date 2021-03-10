@@ -5,7 +5,8 @@ class ClassPract extends React.Component {
     super()
     this.state = {
       name: "Shane",
-      age: "30"
+      age: "30",
+      country: "USA"
     }
   }
   render() {
@@ -13,6 +14,7 @@ class ClassPract extends React.Component {
       <div style={{ textAlign: "center" }}>
         <h3 style={{ color: "#328475" }}>{this.state.name}</h3>
         <h3>{this.state.age}</h3>
+        <h3>{this.state.country}</h3>
       </div >
     )
   }
