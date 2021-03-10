@@ -53,6 +53,9 @@ class ButtonNumber extends React.Component {
     if (prevState.count < this.state.count) {
       const newColor = "purple"
       this.setState({ color: newColor })
+    } if (prevState.count > this.state.count) {
+      const diffColor = "red"
+      this.setState({ color: "red" })
     }
   }
 
