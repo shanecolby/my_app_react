@@ -49,14 +49,21 @@ class ButtonNumber extends React.Component {
     })
   }
 
+  componentDidUpdate(prevProps, prevState) {
+    if (prevState.count < this.state.count) {
+      const newColor = "purple"
+      this.setState({ color: newColor })
+    }
+  }
+
   render() {
 
     return (
       <div style={{ textAlign: "center" }}>
-        <h1>{this.state.count}</h1>
-        <button onClick={this.handleClick}>Number + 1</button>
-        <button onClick={this.clickTimesTwo}>Number * 2</button>
-        <button onClick={this.divideByTwo}>Number / 2</button>
+        <h1 style={{ color: this.state.color }}>{this.state.count}</h1>
+        <button onClick={this.handleClick} style={{ color: "green" }}>Number + 1</button>
+        <button onClick={this.clickTimesTwo} style={{ color: "blue" }}>Number * 2</button>
+        <button onClick={this.divideByTwo} style={{ color: "red" }}>Number / 2</button>
         <br />
         <button onClick={this.clearCount}>CLEAR</button>
       </div>
