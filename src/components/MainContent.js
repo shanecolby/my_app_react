@@ -8,7 +8,7 @@ function MainContent() {
     <div className='mainContent'>
       <h1>React Practice App</h1>
       <ul className="mainList">
-        <li>Add PROPS!</li>
+        <li>Click some of these!</li>
         <h6 className="subText">Click when complete</h6>
         <input type='checkbox' />
         <li>The is the second option</li>
