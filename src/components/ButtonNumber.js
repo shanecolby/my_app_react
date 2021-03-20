@@ -49,6 +49,7 @@ class ButtonNumber extends React.Component {
     })
   }
 
+
   componentDidUpdate(prevProps, prevState) {
     if (prevState.count < this.state.count) {
       const newColor = "purple"
@@ -69,6 +70,8 @@ class ButtonNumber extends React.Component {
         <button onClick={this.divideByTwo} style={{ color: "red" }}>Number / 2</button>
         <br />
         <button onClick={this.clearCount}>CLEAR</button>
+
+
       </div>
     )
   }
