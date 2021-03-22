@@ -18,7 +18,8 @@ function Header() {
   } else if (hours == 5) {
     timeOfDay = "HappyHour!"
     styles.color = "green"
-    timeOfDay = "night"
+  } else {
+    timeOfDay = "evening"
     styles.color = "#D90000"
   }
 
