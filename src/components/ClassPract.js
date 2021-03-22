@@ -7,7 +7,7 @@ class ClassPract extends React.Component {
       name: "Shane",
       age: "30",
       country: "USA",
-      math: (5 * 5),
+      math: (5 * 50),
     }
   }
   render() {
