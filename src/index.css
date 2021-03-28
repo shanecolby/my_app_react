@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(184, 189, 189);
 }
 
 code {
@@ -14,7 +15,7 @@ code {
 
 .navbar  {
   height: 100px;
-  background-color: lightslategrey;
+  background-color: rgb(96, 140, 184);
   color: whitesmoke;
   margin-bottom: 15px;
   text-align: center;
