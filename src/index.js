@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+// import App from './App';
 import reportWebVitals from './reportWebVitals';
-import BasicTest from './components/BasicTest'
+// import BasicTest from './components/BasicTest'
 import WorkingApp from './WorkingApp'
 
 

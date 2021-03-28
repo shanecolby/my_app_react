@@ -15,7 +15,7 @@ function Header() {
   } else if (hours >= 12 && hours < 17) {
     timeOfDay = "afternoon"
     styles.color = "#8914A3"
-  } else if (hours == 5) {
+  } else if (hours === 5) {
     timeOfDay = "HappyHour!"
     styles.color = "green"
   } else {
