@@ -6,7 +6,7 @@ function MainContent() {
 
   return (
     <div className='mainContent'>
-      <h1>React Practice App</h1>
+      <h1 style={{ color: "green" }}>React Practice App</h1>
       <ul className="mainList">
         <li>Click some of these!</li>
         <h6 className="subText">Click amd unclick</h6>
