@@ -25,7 +25,7 @@ class ButtonNumber extends React.Component {
   clickTimesTwo() {
     this.setState((prevState) => {
       return {
-        count: prevState.count * 2,
+        count: prevState.count * 5,
 
       }
     })
@@ -34,7 +34,7 @@ class ButtonNumber extends React.Component {
   divideByTwo() {
     this.setState((prevState) => {
       return {
-        count: prevState.count / 2,
+        count: prevState.count / 5,
 
       }
     })
