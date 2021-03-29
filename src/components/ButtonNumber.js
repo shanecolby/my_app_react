@@ -66,8 +66,8 @@ class ButtonNumber extends React.Component {
       <div style={{ textAlign: "center" }}>
         <h1 style={{ color: this.state.color }}>{this.state.count}</h1>
         <button onClick={this.handleClick} style={{ color: "green" }}>Number + 1</button>
-        <button onClick={this.clickTimesTwo} style={{ color: "blue" }}>Number * 2</button>
-        <button onClick={this.divideByTwo} style={{ color: "red" }}>Number / 2</button>
+        <button onClick={this.clickTimesTwo} style={{ color: "blue" }}>Number * 5</button>
+        <button onClick={this.divideByTwo} style={{ color: "red" }}>Number / 5</button>
         <br />
         <button onClick={this.clearCount}>CLEAR</button>
 
