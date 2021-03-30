@@ -10,9 +10,16 @@ class FormPract extends React.Component {
     this.handleChange = this.handleChange.bind(this)
   }
 
+  // handleChange(event) {
+  //   this.setState({
+  //     [event.target.name]: event.target.value
+  //   })
+  // }
+  //BELOW SHOWS THE BEST PRACTICE TO MAKE A COPY OF [NAME,VALUE] BEFORE SETTING STATE
   handleChange(event) {
+    const { name, value } = event.target
     this.setState({
-      [event.target.name]: event.target.value
+      [name]: value
     })
   }
 
