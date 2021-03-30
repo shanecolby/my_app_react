@@ -8,6 +8,7 @@ import productData from "./components/randomProducts"
 import ClassPract from "./components/ClassPract"
 import Loggedin from "./components/Loggedin"
 import ButtonNumber from "./components/ButtonNumber"
+import ApiPractice from "./components/ApiPractice"
 
 
 
@@ -16,6 +17,7 @@ function WorkingApp() {
   return (
     <div>
       <Header />
+      <ApiPractice />
       <ButtonNumber />
       <Loggedin />
       <MainContent />
