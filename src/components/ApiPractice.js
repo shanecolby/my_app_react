@@ -27,7 +27,7 @@ class ApiPractice extends React.Component {
     const text = this.state.loading ? "loading..." : this.state.character.name
     return (
       <div>
-        <p>{text}</p>
+        <p style={{ textAlign: "center" }}>{text}</p>
       </div>
     )
   }
