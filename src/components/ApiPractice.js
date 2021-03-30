@@ -4,6 +4,7 @@ class ApiPractice extends React.Component {
   constructor() {
     super()
     this.state = {
+      loading: false,
       character: {}
     }
     this.componentDidMount = this.componentDidMount.bind(this)
@@ -11,19 +12,22 @@ class ApiPractice extends React.Component {
   }
 
   componentDidMount() {
+    this.setState({ loading: true })
     fetch("https://swapi.dev/api/people/1")
       .then(response => response.json())
       .then(data => {
         this.setState({
+          loading: false,
           character: data
         })
       })
   }
 
   render() {
+    const text = this.state.loading ? "loading..." : this.state.character.name
     return (
       <div>
-        {this.state.character.name}
+        <p>{text}</p>
       </div>
     )
   }
