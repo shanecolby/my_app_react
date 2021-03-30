@@ -9,7 +9,7 @@ import ClassPract from "./components/ClassPract"
 import Loggedin from "./components/Loggedin"
 import ButtonNumber from "./components/ButtonNumber"
 import ApiPractice from "./components/ApiPractice"
-
+import FormPract from "./components/FormPract"
 
 
 function WorkingApp() {
@@ -18,6 +18,7 @@ function WorkingApp() {
     <div>
       <Header />
       <ApiPractice />
+      <FormPract />
       <ButtonNumber />
       <Loggedin />
       <MainContent />
