@@ -46,6 +46,12 @@ const products = [
     name: "Sticker Set",
     price: 14.99,
     description: "To prove to other devs you know a lot."
+  },
+  {
+    id: "9",
+    name: "Bike",
+    price: 120.99,
+    description: "ten speed mountain bike with shocks"
   }
 ]
 

@@ -44,6 +44,8 @@ class FormPract extends React.Component {
           onChange={this.handleChange}
         />
 
+
+
         <h1>{this.state.firstName} {this.state.lastName}</h1>
       </form>
     )
