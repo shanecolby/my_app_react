@@ -42,10 +42,8 @@ class FormPract extends React.Component {
           placeholder="Last Name"
           onChange={this.handleChange}
         />
-        <h1>{this.state.firstName} {this.state.lastName}</h1>
 
         <br />
-
 
         <textarea
           value={"Some default value"}
@@ -86,6 +84,9 @@ class FormPract extends React.Component {
           /> Female
         </label>
 
+        <br />
+
+        <h1>{this.state.firstName} {this.state.lastName}</h1>
 
 
 
