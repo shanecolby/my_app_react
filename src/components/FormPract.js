@@ -53,12 +53,45 @@ class FormPract extends React.Component {
         />
         <br />
 
-        <input
-          type="checkbox"
-          name="isFriendly"
-          checked={this.state.isFriendly}
-          onChange={this.handleChange}
-        /> Is Friendly?
+        <label>
+          <input
+            type="checkbox"
+            name="isFriendly"
+            checked={this.state.isFriendly}
+            onChange={this.handleChange}
+          /> Is Friendly?
+        </label>
+
+        <br />
+
+        <label>
+          <input
+            type="radio"
+            name="gender"
+            value="Male"
+            checked={this.state.gender === "Male"}
+            onChange={this.handleChange}
+          /> Male
+        </label>
+
+        <br />
+
+        <label>
+          <input
+            type="radio"
+            name="gender"
+            value="Female"
+            checked={this.state.gender === "Female"}
+            onChange={this.handleChange}
+          /> Female
+        </label>
+
+
+
+
+
+
+
 
       </form >
     )
