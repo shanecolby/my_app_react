@@ -5,7 +5,8 @@ class FormPract extends React.Component {
     super()
     this.state = {
       firstName: "",
-      lastName: ""
+      lastName: "",
+      isFriendly: true
     }
     this.handleChange = this.handleChange.bind(this)
   }
@@ -17,10 +18,8 @@ class FormPract extends React.Component {
   // }
   //BELOW SHOWS THE BEST PRACTICE TO MAKE A COPY OF [NAME,VALUE] BEFORE SETTING STATE
   handleChange(event) {
-    const { name, value } = event.target
-    this.setState({
-      [name]: value
-    })
+    const { name, value, type, checked } = event.target
+    type === "checkbox" ? this.setState({ [name]: checked }) : this.setState({ [name]: value })
   }
 
   render() {
@@ -43,11 +42,25 @@ class FormPract extends React.Component {
           placeholder="Last Name"
           onChange={this.handleChange}
         />
-
-
-
         <h1>{this.state.firstName} {this.state.lastName}</h1>
-      </form>
+
+        <br />
+
+
+        <textarea
+          value={"Some default value"}
+          onChange={this.handleChange}
+        />
+        <br />
+
+        <input
+          type="checkbox"
+          name="isFriendly"
+          checked={this.state.isFriendly}
+          onChange={this.handleChange}
+        /> Is Friendly?
+
+      </form >
     )
   }
 }
