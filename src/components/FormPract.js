@@ -6,7 +6,9 @@ class FormPract extends React.Component {
     this.state = {
       firstName: "",
       lastName: "",
-      isFriendly: true
+      isFriendly: false,
+      gender: "",
+      favoriteColor: "blue"
     }
     this.handleChange = this.handleChange.bind(this)
   }
@@ -85,6 +87,19 @@ class FormPract extends React.Component {
         </label>
 
         <br />
+
+        <label>Select your favorite color</label>
+        <select
+          value={this.state.favoriteColor}
+          onChange={this.handleChange}
+          name="favoriteColor"
+        >
+
+
+
+
+        </select>
+
 
         <h1>{this.state.firstName} {this.state.lastName}</h1>
 
