@@ -101,7 +101,10 @@ class FormPract extends React.Component {
           <option value="yellow">Yellow</option>
 
         </select>
-        <button>Submit</button>
+
+        <br />
+
+        <button style={{ margin: "auto", color: "red" }}>Submit</button>
 
 
         <h1>{this.state.firstName} {this.state.lastName}</h1>
