@@ -6,6 +6,7 @@ class FormPract extends React.Component {
     this.state = {
       firstName: "",
       lastName: "",
+      age: "",
       isFriendly: false,
       gender: "",
       favoriteColor: ""
@@ -42,6 +43,16 @@ class FormPract extends React.Component {
           value={this.state.lastName}
           name="lastName"
           placeholder="Last Name"
+          onChange={this.handleChange}
+        />
+
+        <br />
+
+        <input
+          type="text"
+          value={this.state.age}
+          name="age"
+          placeholder="Age"
           onChange={this.handleChange}
         />
 
@@ -94,6 +105,7 @@ class FormPract extends React.Component {
           onChange={this.handleChange}
           name="favoriteColor"
         >
+          <option value="choose">--Choose--</option>
           <option value="blue">Blue</option>
           <option value="red">Red</option>
           <option value="green">Green</option>
@@ -108,6 +120,8 @@ class FormPract extends React.Component {
 
 
         <h1>{this.state.firstName} {this.state.lastName}</h1>
+        <h2>You selected the gender: {this.state.gender}</h2>
+        <h2>Your favorite color is {this.state.favoriteColor}</h2>
 
 
 
