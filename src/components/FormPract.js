@@ -9,7 +9,8 @@ class FormPract extends React.Component {
       age: "",
       isFriendly: false,
       gender: "",
-      favoriteColor: ""
+      favoriteColor: "",
+      favNumber: ""
     }
     this.handleChange = this.handleChange.bind(this)
   }
@@ -116,12 +117,33 @@ class FormPract extends React.Component {
 
         <br />
 
+        <label>Select your favorite Number--</label>
+        <select
+          name="favNumber"
+          value={this.state.favNumber}
+          onChange={this.handleChange}
+        >
+          <option>Choose number below--</option>
+          <option value="2">2</option>
+          <option value="4">4</option>
+          <option value="6">6</option>
+          <option value="8">8</option>
+        </select>
+
+        <br />
+
         <button style={{ margin: "auto", color: "red" }}>Submit</button>
 
 
-        <h1>{this.state.firstName} {this.state.lastName}</h1>
-        <h2>You selected the gender: {this.state.gender}</h2>
-        <h2>Your favorite color is {this.state.favoriteColor}</h2>
+        <h1 style={{ color: "greenyellow" }}>{this.state.firstName} {this.state.lastName}</h1>
+        <h2>You selected the gender:
+          <div
+            style={{ color: "greenyellow" }}> {this.state.gender}
+          </div>
+        </h2>
+
+        <h2>Your favorite color is <div style={{ color: "greenyellow" }}>{this.state.favoriteColor}</div></h2>
+        <h3>Your favorite number is <div style={{ color: "greenyellow" }}>{this.state.favNumber}</div></h3>
 
 
 
