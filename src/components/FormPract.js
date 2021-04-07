@@ -132,6 +132,18 @@ class FormPract extends React.Component {
 
         <br />
 
+        <label>Click if all infomation is completed--</label>
+        <br />
+
+        <input
+          type="checkbox"
+          name="isComplete"
+          checked={this.state.isComplete}
+          onChange={this.handleChange}
+        /> form completed
+
+        <br />
+
         <button style={{ margin: "auto", color: "red" }}>Submit</button>
 
 
