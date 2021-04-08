@@ -30,7 +30,7 @@ class ApiPractice extends React.Component {
     const mass = this.state.loading ? null : this.state.character.mass
     const skinColor = this.state.loading ? null : this.state.character.skin_color
     return (
-      <div>
+      <div style={{ fontFamily: "cursive" }}>
         <p style={{ textAlign: "center" }}>Name: {text}</p>
         <p style={{ textAlign: "center" }}>Gender: {textOne}</p>
         <p style={{ textAlign: "center" }}>Height: {height} inches</p>

@@ -9,7 +9,7 @@ function MainContent() {
       <h1 style={{ color: "green" }}>React Practice App</h1>
       <ul className="mainList">
         <li>Click some of these!</li>
-        <h6 className="subText">Click amd unclick</h6>
+        <h6 className="subText">Click and unclick</h6>
         <input type='checkbox' />
         <li>The is the second option</li>
         <h6 className="subText">Click when complete</h6>

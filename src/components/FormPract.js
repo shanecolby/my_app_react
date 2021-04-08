@@ -28,7 +28,7 @@ class FormPract extends React.Component {
 
   render() {
     return (
-      <form style={{ textAlign: "center" }}>
+      <form style={{ textAlign: "center", fontFamily: "cursive" }}>
         <input
           type="text"
           value={this.state.firstName}
