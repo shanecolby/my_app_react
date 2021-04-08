@@ -29,7 +29,14 @@ class Loggedin extends React.Component {
       <div style={{ margin: "auto", width: 300, padding: 10 }}>
         <h1 onClick={() => console.log("clicked")} style={{ textAlign: "center" }}>You are currently logged {wordDisplay} </h1>
         <p></p>
-        <button className="button" onClick={this.handleClick}>{buttonText}</button>
+        <button
+          style={{
+            color: "goldenrod",
+            backgroundColor: "navy",
+            outlineColor: "white"
+          }}
+          className="button"
+          onClick={this.handleClick}>{buttonText}</button>
       </div>
     )
   }
