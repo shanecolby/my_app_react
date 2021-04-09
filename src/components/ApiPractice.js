@@ -29,13 +29,15 @@ class ApiPractice extends React.Component {
     const height = this.state.loading ? null : this.state.character.height
     const mass = this.state.loading ? null : this.state.character.mass
     const skinColor = this.state.loading ? null : this.state.character.skin_color
+    const birthYear = this.state.loading ? null : this.state.character.birth_year
     return (
       <div style={{ fontFamily: "cursive" }}>
         <p style={{ textAlign: "center" }}>Name: {text}</p>
         <p style={{ textAlign: "center" }}>Gender: {textOne}</p>
         <p style={{ textAlign: "center" }}>Height: {height} inches</p>
         <p style={{ textAlign: "center" }}>Weight: {mass} kg.</p>
-        <p style={{ textAlign: "center" }}>Skin Color: {skinColor}</p>
+        <p style={{ textAlign: "center " }}>Skin Color: {skinColor}</p>
+        <p style={{ textAlign: "center" }}>Birth Year: {birthYear}</p>
 
       </div>
     )
