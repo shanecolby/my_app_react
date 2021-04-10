@@ -10,6 +10,7 @@ class ButtonNumber extends React.Component {
     this.clickTimesTwo = this.clickTimesTwo.bind(this)
     this.divideByTwo = this.divideByTwo.bind(this)
     this.clearCount = this.clearCount.bind(this)
+    this.squared = this.squared.bind(this)
   }
 
   handleClick() {
@@ -49,6 +50,14 @@ class ButtonNumber extends React.Component {
     })
   }
 
+  squared() {
+    this.setState((prevState) => {
+      return {
+        count: prevState.count * prevState.count,
+      }
+    })
+  }
+
 
   componentDidUpdate(prevProps, prevState) {
     if (prevState.count < this.state.count) {
@@ -68,6 +77,7 @@ class ButtonNumber extends React.Component {
         <button onClick={this.handleClick} style={{ color: "green" }}>Number + 1</button>
         <button onClick={this.clickTimesTwo} style={{ color: "blue" }}>Number * 5</button>
         <button onClick={this.divideByTwo} style={{ color: "red" }}>Number / 5</button>
+        <button onClick={this.squared} style={{ color: "turquoise" }}>Squared</button>
         <br />
         <button onClick={this.clearCount}>CLEAR</button>
 

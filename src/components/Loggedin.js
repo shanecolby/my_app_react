@@ -4,7 +4,7 @@ class Loggedin extends React.Component {
   constructor() {
     super()
     this.state = {
-      isLoggedIn: true
+      isLoggedIn: false
     }
     this.handleClick = this.handleClick.bind(this)
   }
