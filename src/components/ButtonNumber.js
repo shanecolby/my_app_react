@@ -27,9 +27,7 @@ function ButtonNumber() {
     setCount(prevCount => prevCount / 2)
   }
 
-  function clear() {
-    setCount(prevCount => prevCount - prevCount)
-  }
+
 
 
 
@@ -44,7 +42,7 @@ function ButtonNumber() {
       <button onClick={subtractTen}>Subtract 10</button>
       <button onClick={double}>Double</button>
       <button onClick={half}>Cut in half</button>
-      <button onClick={clear}>Clear</button>
+      <button onClick={() => setCount(prevCount => prevCount - prevCount)}>Clear</button>
     </div>
   )
 
