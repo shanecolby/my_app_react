@@ -3,13 +3,7 @@ import React from "react"
 // function Loggedin() {
 //   const [loggedIn, setLoggedIn] = useState("false")
 
-// handleClick() {
-//   (prevState => {
-//     return {
-//       isLoggedIn: !prevState.isLoggedIn
-//     }
-//   })
-// }
+
 
 
 
