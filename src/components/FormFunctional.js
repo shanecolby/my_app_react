@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import FormPract from "./FormPract"
 
 function FormFunctional() {
   const [firstName, setfirstName] = useState("")
@@ -12,8 +13,9 @@ function FormFunctional() {
 
   // }
 
-  const handleClick = (event) => {
+  const handleChange = (event) => {
     const { name, value } = event.target
+
 
 
 
@@ -32,6 +34,7 @@ function FormFunctional() {
         name="firstName"
         value={firstName}
         placeholder="First Name"
+        onChange={handleChange}
 
       />
 
@@ -40,8 +43,16 @@ function FormFunctional() {
         name="lastName"
         value={lastName}
         placeholder="Last Name"
+        onChange={handleChange}
 
       />
+
+      <textarea
+        value={"Some default value"}
+
+      />
+
+
     </form>
   )
 }
