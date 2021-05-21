@@ -11,12 +11,15 @@ import ButtonNumber from "./components/ButtonNumber"
 import ApiPractice from "./components/ApiPractice"
 import FormPract from "./components/FormPract"
 import StatePract from "./components/StatePract"
+import FormFunctional from "./components/FormFunctional"
+
 
 
 function WorkingApp() {
   const productComponents = productData.map(item => <Product key={item.id} product={item} />)
   return (
     <div>
+      <FormFunctional />
       <StatePract />
       <ApiPractice />
       <FormPract />
