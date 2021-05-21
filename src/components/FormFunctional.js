@@ -3,7 +3,7 @@ import FormPract from "./FormPract"
 
 function FormFunctional() {
   const [firstName, setfirstName] = useState("")
-  const [lastName, lasttName] = useState("")
+  const [lastName, setlastName] = useState("")
 
 
   // function handleChange(event) {
@@ -13,17 +13,17 @@ function FormFunctional() {
 
   // }
 
-  const handleChange = (event) => {
-    const { name, value } = event.target
+  // const handleChange = (event) => {
+  //   const { name, value } = event.target
 
 
 
 
-    // const boardCopy = [...board];
-    // // If user click an occupied square or if game is won, return
-    // if (winner || boardCopy[i]) return
+  //   // const boardCopy = [...board];
+  //   // // If user click an occupied square or if game is won, return
+  //   // if (winner || boardCopy[i]) return
 
-  }
+  // }
 
 
 
@@ -34,7 +34,7 @@ function FormFunctional() {
         name="firstName"
         value={firstName}
         placeholder="First Name"
-        onChange={handleChange}
+        onChange={e => setfirstName(e.target.value)}
 
       />
 
@@ -43,7 +43,7 @@ function FormFunctional() {
         name="lastName"
         value={lastName}
         placeholder="Last Name"
-        onChange={handleChange}
+        onChange={e => setlastName(e.target.value)}
 
       />
 
