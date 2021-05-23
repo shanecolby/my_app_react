@@ -6,6 +6,7 @@ function FormFunctional() {
   const [lastName, setlastName] = useState("")
   const [age, setAge] = useState("")
   const [gender, setGender] = useState("")
+  const [isFriendly, setIsFriendly] = useState("false")
 
   // function handleChange(event) {
   //   const { name, value } = event.target
@@ -83,6 +84,20 @@ function FormFunctional() {
         /> Female
 
       </label>
+
+      <br />
+
+      <label>
+        <input
+          type="checkbox"
+          name="isFriendly"
+          checked={isFriendly}
+          onChange={e => setIsFriendly(
+            type === "checkbox" ? setIsFriendly(e.target.value) : setIsFriendly(e.target.value)
+          )}
+        /> Is Friendly?
+
+        </label>
 
 
 
